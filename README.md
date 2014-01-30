@@ -1,3 +1,12 @@
+## Setup ##
+You must be on a Unix-like system since at least one dependency, kgio, can't run on windows.
+You must have Ruby version >= v2.0 with rubygems.
+
+Run the following commands from the repo top directory:
+1. gem install bundle
+2. bundle install
+3. rails server
+
 ## Running the claimer on all users
 
 A task will properly build and calculate new claims by calling `create_pending_claims`, `set_rate_for_claims`, `submit_pending_claims`.
@@ -37,4 +46,4 @@ amount to everyone who has exceeded the eight hour threshold in the current peri
     TEAM_ID
     BASIC_AUTH_PASSWORD
     SECRET_KEY_BASE
-    
+
