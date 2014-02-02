@@ -3,6 +3,7 @@ You must be on a Unix-like system since at least one dependency, kgio, can't run
 You must have Ruby version >= v2.0 with rubygems.
 
 Run the following commands from the repo top directory:
+
 1. gem install bundle
 2. bundle install
 3. rails server
