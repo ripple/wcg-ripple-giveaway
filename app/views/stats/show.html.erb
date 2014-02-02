@@ -14,11 +14,18 @@
   <table style='width:80%; margin: 0 auto; margin-top:20px' class='table table-striped'>
     <thead>
       <tr>
-        <td>date</td>
-        <td>xrp amount</td>
-        <td>points</td>
-        <td>rate xrp/point</td>
-        <td>status</td>
+        <td><%= sortable "created_at", "date" %></td>
+        <td><%= sortable "xrp_disbursed", "xrp amount" %></td>
+        <td><%= sortable "points", "points" %></td>
+        <td><%= sortable "rate", "rate xrp/point" %></td>
+        <td><%= sortable "transaction_status", "status" %></td>
+<!--
+        <td><%= link_to "date", :sort_col => "created_at", :sort_dir => (@sort_dir == "asc" ? "desc" : "asc") %></td>
+        <td><%= link_to "xrp amount", :sort_col => "xrp_disbursed", :sort_dir => (@sort_dir == "asc" ? "desc" : "asc") %></td>
+        <td><%= link_to "points", :sort_col => "points", :sort_dir => (@sort_dir == "asc" ? "desc" : "asc") %></td>
+        <td><%= link_to "rate xrp/point", :sort_col => "rate", :sort_dir => (@sort_dir == "asc" ? "desc" : "asc") %></td>
+        <td><%= link_to "status", :sort_col => "transaction_status", :sort_dir => (@sort_dir == "asc" ? "desc" : "asc") %></td>
+-->
       </tr>
     <thead>
     <tbody>
