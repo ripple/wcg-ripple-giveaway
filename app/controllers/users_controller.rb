@@ -27,8 +27,8 @@ class UsersController < ApplicationController
   end
 
   def registration
-    @username = params.require(:username)
-    @verification_code = params.require(:verification_code)
-    @ripple_address = params.require(:ripple_address)
+    @username = params.require(:username).strip
+    @verification_code = params.require(:verification_code).strip
+    @ripple_address = params.require(:ripple_address).strip
   end
 end
