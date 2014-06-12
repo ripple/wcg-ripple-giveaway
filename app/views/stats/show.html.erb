@@ -21,11 +21,11 @@
   <table style='width:80%; margin: 0 auto; margin-top:20px' class='table table-striped'>
     <thead>
       <tr>
-        <td>date</td>
-        <td>xrp amount</td>
-        <td>points</td>
-        <td>rate xrp/point</td>
-        <td>status</td>
+        <td><%= sortable "created_at", "date" %></td>
+        <td><%= sortable "xrp_disbursed", "xrp amount" %></td>
+        <td><%= sortable "points", "points" %></td>
+        <td><%= sortable "rate", "rate xrp/point" %></td>
+        <td><%= sortable "transaction_status", "status" %></td>
       </tr>
     <thead>
     <tbody>
